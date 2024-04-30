@@ -15,7 +15,7 @@ Currently only supports PNG files (no auto-fetching of usernames right now)
 Download the latest release from [releases](https://github.com/SinanAkkoyun/mcskinviewer/releases) page and install it with `dpkg`:
 ```sh
 wget https://github.com/SinanAkkoyun/mcskinviewer/releases/download/v1.0.3/mcskinviewer_1.0.3_amd64.deb
-dpkg -i mcskinviewer_{your_version}_amd64.deb
+dpkg -i mcskinviewer_1.0.3_amd64.deb
 ```
 
 ### Building from source
