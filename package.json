@@ -1,6 +1,6 @@
 {
   "name": "mcskinviewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Minecraft skin viewer built with Electron",
   "main": "main.js",
   "author": {

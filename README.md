@@ -4,13 +4,21 @@
 Display Minecraft Skins from the comfort of your CLI!
 
 ```sh
-mcskinviewer ./path/to/steve.png name=Steve
+mcskinviewer ./path/to/steve.png --name=Steve --on-top
 ```
 
 Currently only supports PNG files (no auto-fetching of usernames right now)
 
 ## Installation
 
+### Install from releases
+Download the latest release from [releases](https://github.com/SinanAkkoyun/mcskinviewer/releases) page and install it with `dpkg`:
+```sh
+wget https://github.com/SinanAkkoyun/mcskinviewer/releases/download/{latest_release}/mcskinviewer_{your_version}_amd64.deb
+dpkg -i mcskinviewer_{your_version}_amd64.deb
+```
+
+### Building from source
 ```sh
 git clone https://github.com/SinanAkkoyun/mcskinviewer
 cd mcskinviewer

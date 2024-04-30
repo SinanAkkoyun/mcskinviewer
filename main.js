@@ -10,12 +10,15 @@ function createWindow() {
 
     let filePath = null;
     let name = null;
+    let onTop = false;  // Default value for the onTop flag
 
     // Parse arguments
     argv.forEach(arg => {
-        if (arg.startsWith('name=')) {
+        if (arg.startsWith('--name=')) {
             name = arg.split('=')[1];
-        } else {
+        } else if (arg === '--on-top') {
+            onTop = true;
+        } else if (!arg.startsWith('--')) {
             filePath = arg; // Assume if it's not a named argument, it's the file path
         }
     });
@@ -61,6 +64,7 @@ function createWindow() {
     // Load the index.html with query parameters
     mainWindow.loadURL(indexUrl);
 
+    if(onTop) mainWindow.setAlwaysOnTop(true, 'normal');
     // mainWindow.loadFile(path.join(__dirname, 'public', 'index.html'));
 
     // mainWindow.webContents.openDevTools();
