@@ -1,5 +1,5 @@
 # mcskinviewer
-![sample text: mlg 360 noscope](https://github.com/SinanAkkoyun/minecraft-skin-electron.js/blob/main/assets/preview_window.png?raw=true)
+![sample text: mlg 360 noscope](https://github.com/SinanAkkoyun/mcskinviewer/blob/main/assets/preview_window.png?raw=true)
 
 Display Minecraft Skins from the comfort of your CLI!
 
