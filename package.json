@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-skin-viewer",
+  "name": "minecraft-skin-viewer.js",
   "version": "1.0.0",
   "description": "A Minecraft skin viewer built with Electron",
   "main": "index.js",
