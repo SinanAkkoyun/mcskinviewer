@@ -1,0 +1,29 @@
+{
+  "name": "minecraft-skin-viewer",
+  "version": "1.0.0",
+  "description": "A Minecraft skin viewer built with Electron",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "node start-app.js",
+    "start": "electron main.js",
+    "test": "node open.js",
+    "start-electron": "electron viewer.js",
+    "start-all": "npm-run-all --parallel start-server start-electron",
+    "open-skin": "electron viewer.js"
+  },
+  "dependencies": {
+    "electron": "^30.0.1",
+    "express": "^4.19.2",
+    "npm-run-all": "^4.1.5",
+    "fs": "0.0.1-security"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "keywords": [
+    "minecraft",
+    "skin",
+    "viewer",
+    "electron"
+  ]
+}
