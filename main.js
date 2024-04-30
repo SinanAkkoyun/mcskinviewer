@@ -5,7 +5,7 @@ const url = require('url');
 
 function createWindow() {
     // Command line arguments processing
-    const startArgIndex = process.argv[0].endsWith('electron') || process.argv[0].endsWith('electron.exe') ? 1 : 2;
+    const startArgIndex = 1 // process.argv[0].endsWith('electron') || process.argv[0].endsWith('electron.exe') ? 1 : 2;
     const argv = process.argv.slice(startArgIndex);
 
     let filePath = null;

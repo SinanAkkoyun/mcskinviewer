@@ -1,16 +1,25 @@
-# minecraft-skin-electron.js
+# mcskinviewer
 ![sample text: mlg 360 noscope](https://github.com/SinanAkkoyun/minecraft-skin-electron.js/blob/main/assets/preview_window.png?raw=true)
 
-Simply display a minecraft skin in a new electron window.
+Display Minecraft Skins from the comfort of your CLI!
 
-## Usage
-```javascript
-const {openSkinViewer} = require('minecraft-skin-electron.js')
-
-openSkinViewer('/path/to/skin.png', 'PlayerName')
+```sh
+mcskinviewer ./path/to/steve.png name=Steve
 ```
 
-It will automatically serve the website if no server is currently running.
+Currently only supports PNG files (no auto-fetching of usernames right now)
 
-# DISCLAIMER
-This project was quickly hacked together and has not been tested in any way, nor should this repo provide any value outside of my specific usecase. Use at your own risk.
+## Installation
+
+```sh
+git clone https://github.com/SinanAkkoyun/mcskinviewer
+cd mcskinviewer
+
+npm i
+npm run dist
+
+sudo dpkg -i dist/mcskinviewer_{your_version}_amd64.deb
+```
+
+## DISCLAIMER
+This project was quickly hacked together and has not been tested in any way. Use at your own risk.
