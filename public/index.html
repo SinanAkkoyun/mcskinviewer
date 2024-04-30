@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>Skin Preview</title>
+	<title>3D Skin Preview</title>
 		
 	<style>
 		@font-face {
@@ -311,7 +311,7 @@
 		<div class="control-section">
 			<h1>Name Tag</h1>
 			<div class="control">
-				<label>Text: <input id="nametag_text" type="text" value="H4x03D" placeholder="none" size="20"></label>
+				<label>Text: <input id="nametag_text" type="text" value="" placeholder="none" size="20"></label>
 			</div>
 		</div>
 
@@ -614,16 +614,20 @@
 		document.addEventListener('DOMContentLoaded', function() {
 		    const skinUrl = getQueryParam('skin');
 				const name = getQueryParam('name');
-		    if (skinUrl) {
-						initializeControls();
-						initializeViewer();
-						
-		        document.getElementById('skin_url').value = decodeURIComponent(skinUrl)
-						document.getElementById('nametag_text').value = decodeURIComponent(name)
 
-						reloadNameTag();
-		        reloadSkin(); // Make sure this function loads the skin based on the skin_url input
+				initializeControls();
+				initializeViewer();
+
+		    if (skinUrl) {
+		        document.getElementById('skin_url').value = decodeURIComponent(skinUrl)
+		        reloadSkin();
 		    }
+
+				if(name) {
+
+					document.getElementById('nametag_text').value = decodeURIComponent(name)
+					reloadNameTag();
+				}
 		});
 		
 
