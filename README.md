@@ -1,7 +1,7 @@
 # mcskinviewer
 ![sample text: mlg 360 noscope](https://github.com/SinanAkkoyun/mcskinviewer/blob/main/assets/preview_window.png?raw=true)
 
-Display Minecraft Skins from the comfort of your CLI!
+Display Minecraft Skins from the comfort of your CLI! (powered by [skinview3d](https://github.com/bs-community/skinview3d))
 
 ```sh
 mcskinviewer ./path/to/steve.png --name=Steve --on-top
